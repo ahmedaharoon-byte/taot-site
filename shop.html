@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>TAOT – Shop</title>
-<link rel="stylesheet" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,44 +18,115 @@
 
 <header>
 <h1>TAOT.CO</h1>
-<p>Shop</p>
+<p>The Art Of Tote</p>
 </header>
 
 <section>
 
-<h2>Products</h2>
+<h2>Our Products</h2>
 
 <div class="product-grid">
 
 <div class="product">
-<img src="bag1.jpg">
+<img src="bag1.jpg" alt="Hand Painted Tote">
 <h3>Hand Painted Tote</h3>
 <p>Custom painted upcycled tote bag.</p>
+
+<a class="buy-btn"
+href="https://wa.me/923310006909?text=Hi%20I%20want%20to%20order%20a%20Hand%20Painted%20Tote%20from%20TAOT">
+Order on WhatsApp
+</a>
+
 </div>
+
 
 <div class="product">
-<img src="bag2.jpg">
-<h3>Minimal Art Tote</h3>
-<p>Clean artistic design on canvas tote.</p>
+<img src="bag2.jpg" alt="Custom Artwork Tote">
+<h3>Custom Artwork Tote</h3>
+<p>Personalized hand-painted design.</p>
+
+<a class="buy-btn"
+href="https://wa.me/923248546769?text=Hi%20I%20want%20to%20order%20a%20Custom%20Artwork%20Tote%20from%20TAOT">
+Order on WhatsApp
+</a>
+
 </div>
+
 
 <div class="product">
-<img src="bag3.jpg">
-<h3>Custom Order Tote</h3>
-<p>Personalized hand painted tote bag.</p>
-</div>
+<img src="bag3.jpg" alt="Limited Edition Tote">
+<h3>Limited Edition Tote</h3>
+<p>Exclusive design drop.</p>
+
+<a class="buy-btn"
+href="https://wa.me/923310006909?text=Hi%20I%20want%20to%20order%20the%20Limited%20Edition%20Tote%20from%20TAOT">
+Order on WhatsApp
+</a>
 
 </div>
 
-<p>
-To order a tote bag please contact us on WhatsApp.
-</p>
+</div>
+
+</section>
+
+
+<section>
+
+<h2>Follow Our Work</h2>
 
 <p>
-<a href="https://wa.me/923310006909">Order on WhatsApp</a>
+See new tote drops and custom artwork on Instagram.
 </p>
+
+<a class="instagram-btn"
+href="https://instagram.com/taot.co"
+target="_blank">
+View Instagram @taot.co
+</a>
 
 </section>
 
 </body>
 </html>
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+margin-top:30px;
+}
+
+.product{
+background:#111;
+padding:20px;
+border-radius:10px;
+text-align:center;
+}
+
+.product img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.buy-btn{
+display:inline-block;
+margin-top:10px;
+padding:10px 18px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.instagram-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+background:#E1306C;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
