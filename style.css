@@ -19,9 +19,10 @@ font-size:16px;
 }
 
 header{
-padding:120px 20px;
+padding:140px 20px;
 text-align:center;
-background:#111;
+background:#000;
+color:white;
 }
 
 header h1{
