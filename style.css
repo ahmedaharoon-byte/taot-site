@@ -1,9 +1,19 @@
-body{
-font-family: Arial, Helvetica, sans-serif;
+/* RESET */
+
+*{
 margin:0;
-background:#111;
-color:#fff;
+padding:0;
+box-sizing:border-box;
 }
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#0f0f0f;
+color:white;
+line-height:1.6;
+}
+
+/* NAVIGATION */
 
 nav{
 background:#000;
@@ -12,23 +22,37 @@ text-align:center;
 }
 
 nav a{
-color:#fff;
+color:white;
 margin:0 20px;
 text-decoration:none;
 font-size:16px;
+font-weight:bold;
 }
+
+nav a:hover{
+opacity:0.7;
+}
+
+/* HEADER */
 
 header{
 padding:140px 20px;
 text-align:center;
-background:#000;
-color:white;
+background:#111;
 }
 
 header h1{
 font-size:60px;
 letter-spacing:4px;
+margin-bottom:10px;
 }
+
+header p{
+font-size:18px;
+opacity:0.8;
+}
+
+/* SECTIONS */
 
 section{
 max-width:1000px;
@@ -36,25 +60,40 @@ margin:auto;
 padding:60px 20px;
 }
 
-h2{
+section h2{
 font-size:28px;
 margin-bottom:20px;
 }
 
-.product{
-border:1px solid #444;
-padding:20px;
-margin-top:20px;
+/* PRODUCT GRID */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+margin-top:30px;
 }
 
-.button{
-display:inline-block;
-background:white;
-color:black;
-padding:12px 25px;
-text-decoration:none;
-margin-top:10px;
+.product{
+background:#1a1a1a;
+padding:15px;
+border-radius:6px;
 }
+
+.product img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:4px;
+margin-bottom:10px;
+}
+
+.product h3{
+margin-bottom:5px;
+}
+
+/* INSTAGRAM GRID */
+
 .insta-grid{
 display:grid;
 grid-template-columns:repeat(4,1fr);
@@ -64,5 +103,67 @@ margin-top:20px;
 
 .insta-grid img{
 width:100%;
-display:block;
+height:250px;
+object-fit:cover;
+border-radius:6px;
+}
+
+/* BUTTONS */
+
+.button{
+display:inline-block;
+background:white;
+color:black;
+padding:12px 25px;
+text-decoration:none;
+margin-top:15px;
+font-weight:bold;
+}
+
+/* LINKS */
+
+a{
+color:#6fb4ff;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+header h1{
+font-size:40px;
+}
+
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.insta-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+nav a{
+margin:0 10px;
+}
+
+}
+
+@media(max-width:500px){
+
+.product-grid{
+grid-template-columns:1fr;
+}
+
+.insta-grid{
+grid-template-columns:1fr;
+}
+
+header{
+padding:100px 20px;
+}
+
+header h1{
+font-size:32px;
+}
+
 }
