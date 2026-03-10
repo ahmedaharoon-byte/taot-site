@@ -1,176 +1,120 @@
 body{
-
 font-family:'Poppins',sans-serif;
-
 margin:0;
-
-background:#0c0c0c;
-
+background:#0f0f0f;
 color:white;
-
-text-align:center;
-
 }
 
+.container{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
 
-header{
+.header{
+border-bottom:1px solid #222;
+}
 
+.header-row{
 display:flex;
-
 justify-content:space-between;
-
 align-items:center;
-
-padding:25px 60px;
-
-background:#111;
-
+padding:25px 0;
 }
-
 
 .logo{
-
-font-size:28px;
-
 font-weight:700;
-
-letter-spacing:3px;
-
+font-size:24px;
+letter-spacing:2px;
 }
 
-
-nav a{
-
+.nav a{
 margin-left:25px;
-
 text-decoration:none;
-
 color:#f5d547;
-
-font-weight:500;
-
 }
-
 
 .hero{
-
-padding:120px 30px;
-
-max-width:900px;
-
-margin:auto;
-
+padding:120px 0;
 }
 
-
-.hero h1{
-
-font-size:60px;
-
-margin-bottom:20px;
-
+.hero-grid{
+display:flex;
+gap:60px;
+align-items:center;
 }
 
-
-.hero p{
-
-font-size:20px;
-
-opacity:0.85;
-
+.hero-title h1{
+font-size:70px;
+margin:0;
 }
 
+.hero-text p{
+max-width:500px;
+line-height:1.7;
+}
+
+.buttons{
+margin-top:25px;
+display:flex;
+gap:20px;
+}
+
+.btn-primary{
+background:#f5d547;
+color:black;
+padding:14px 28px;
+border-radius:40px;
+text-decoration:none;
+}
+
+.btn-outline{
+border:2px solid #f5d547;
+color:#f5d547;
+padding:12px 26px;
+border-radius:40px;
+text-decoration:none;
+}
 
 .section{
-
-max-width:900px;
-
-margin:auto;
-
-padding:100px 30px;
-
+padding:100px 0;
 }
 
-
-.highlight{
-
-background:#121212;
-
+.alt{
+background:#141414;
 border-top:1px solid #222;
-
 border-bottom:1px solid #222;
-
 }
-
 
 .product{
-
-background:#151515;
-
+background:#1b1b1b;
 padding:40px;
-
-margin:40px 0;
-
 border-radius:12px;
-
+margin:30px 0;
 }
 
-
-.primary{
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:14px 30px;
-
-background:#f5d547;
-
-color:black;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:600;
-
-}
-
-
-.secondary{
-
-display:inline-block;
-
-margin-top:20px;
-
-padding:14px 30px;
-
-border:2px solid #f5d547;
-
-color:#f5d547;
-
-border-radius:40px;
-
-text-decoration:none;
-
-margin-left:10px;
-
-}
-
-
-.payments p{
-
-margin:15px 0;
-
-}
-
-
-footer{
-
-padding:50px;
-
+.footer{
 border-top:1px solid #222;
+padding:40px 0;
+text-align:center;
+}
 
-margin-top:60px;
+.center{
+text-align:center;
+}
+
+.narrow{
+max-width:700px;
+}
+
+@media(max-width:768px){
+
+.hero-grid{
+flex-direction:column;
+}
+
+.hero-title h1{
+font-size:48px;
+}
 
 }
