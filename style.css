@@ -2,11 +2,11 @@ body{
 margin:0;
 font-family:'Poppins',sans-serif;
 background:#0e0e0e;
-color:#ffffff;
+color:white;
+text-align:center;
 }
 
 header{
-text-align:center;
 padding:30px 20px;
 }
 
@@ -27,10 +27,9 @@ font-weight:500;
 }
 
 .hero{
-text-align:center;
-padding:80px 20px;
 max-width:900px;
 margin:auto;
+padding:80px 20px;
 }
 
 .hero h2{
@@ -41,7 +40,6 @@ margin-bottom:20px;
 .hero p{
 font-size:18px;
 color:#cfcfcf;
-line-height:1.6;
 }
 
 .buttons{
@@ -59,7 +57,7 @@ text-decoration:none;
 
 .btn-primary{
 background:#ffd600;
-color:#000;
+color:black;
 }
 
 .btn-outline{
@@ -71,17 +69,12 @@ color:#ffd600;
 max-width:1200px;
 margin:auto;
 padding:80px 20px;
-text-align:center;
 }
 
 .instagram-feed{
-background:#ffffff;
-padding:25px;
-border-radius:16px;
-min-height:700px;
-display:flex;
-align-items:center;
-justify-content:center;
+background:white;
+padding:20px;
+border-radius:14px;
 }
 
 .instagram-feed iframe{
@@ -91,7 +84,6 @@ border:0;
 }
 
 footer{
-text-align:center;
 padding:40px;
 color:#888;
 }
