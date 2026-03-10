@@ -124,6 +124,19 @@ margin:auto;
 .payment h2{
 margin-bottom:20px;
 }
+.instabtn{
+background:#E1306C;
+color:white;
+border:none;
+padding:12px 24px;
+border-radius:25px;
+cursor:pointer;
+font-size:14px;
+}
+
+.instabtn:hover{
+opacity:0.85;
+}
 
 .payment-box{
 background:#111;
