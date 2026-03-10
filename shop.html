@@ -10,6 +10,8 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
+background:#f8f8f8;
+color:#222;
 }
 
 header{
@@ -17,6 +19,9 @@ background:#111;
 color:white;
 padding:20px;
 text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 nav{
@@ -38,7 +43,7 @@ min-height:100vh;
 }
 
 #home{
-background:#ffd34d;
+background:#f4c542;
 text-align:center;
 }
 
@@ -48,13 +53,25 @@ text-align:center;
 }
 
 #shop{
-background:#f6f6f6;
+background:#f3f3f3;
 text-align:center;
+padding:80px 0;
 }
 
 #contact{
-background:#ececec;
+background:#eaeaea;
 text-align:center;
+}
+
+.shop-widget{
+width:100vw;
+max-width:100vw;
+margin-left:calc(50% - 50vw);
+padding:40px 20px;
+}
+
+.ft{
+width:100%;
 }
 
 button{
@@ -64,6 +81,18 @@ background:#111;
 color:white;
 cursor:pointer;
 margin:10px;
+border-radius:5px;
+}
+
+button:hover{
+background:#333;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
 }
 
 </style>
@@ -74,6 +103,7 @@ margin:10px;
 <header>
 
 <h1>TAOT.co</h1>
+<p>The Art of Tote</p>
 
 <nav>
 <a href="#home">Home</a>
@@ -84,46 +114,56 @@ margin:10px;
 
 </header>
 
-
 <section id="home">
-<h2>Home</h2>
-<p>The Art of Tote</p>
-</section>
 
+<h2>Home</h2>
+<p>Hand Painted Tote Bags</p>
+
+</section>
 
 <section id="bio">
-<h2>Bio</h2>
-<p>Founded by Ahmed & Humna. Hand painted canvas tote bags.</p>
-</section>
 
+<h2>Bio</h2>
+<p>The Art of Tote is a small creative project by Ahmed and Humna focused on handmade painted tote bags. Each piece is designed and painted individually on canvas.</p>
+
+</section>
 
 <section id="shop">
 
 <h2>Shop</h2>
+<p>View Our Hand Painted Products</p>
+
+<div class="shop-widget">
 
 <div data-key="Playful Product Cards" class="ft" id="ftfq3k45jj"></div>
 
-</section>
+</div>
 
+</section>
 
 <section id="contact">
 
 <h2>Contact</h2>
 
 <a href="https://instagram.com/_ahmedaharoon">
-<button>Founder Instagram</button>
+<button>Founder's Instagram</button>
 </a>
 
 <a href="https://instagram.com/taot.co">
-<button>TAOT Instagram</button>
+<button>TAOT.co's Instagram</button>
 </a>
 
-<a href="https://wa.me/923248546769?text=Hello%20I%20want%20to%20order%20a%20tote%20bag">
-<button>WhatsApp Order</button>
+<a href="https://wa.me/923248546769?text=Hello%20I%20want%20to%20order%20a%20tote%20bag%20from%20The%20Art%20of%20Tote">
+<button>Order on WhatsApp</button>
 </a>
 
 </section>
 
+<footer>
+
+<p>© 2026 TAOT.co</p>
+
+</footer>
 
 <script src="https://wdg.fouita.com/widgets/0x3f962e.js"></script>
 
