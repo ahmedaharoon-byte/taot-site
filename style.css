@@ -77,3 +77,6 @@ border-top:1px solid #eee;
 background:white;
 margin-top:40px;
 }
+nav a:visited{
+color:#111;
+}
