@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Art of Tote</title>
+
+<title>Shop | TAOT</title>
 
 <style>
 
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#f8f8f8;
-color:#222;
+background:#f5f5f5;
 }
 
 header{
@@ -19,9 +20,6 @@ background:#111;
 color:white;
 padding:20px;
 text-align:center;
-position:sticky;
-top:0;
-z-index:1000;
 }
 
 nav{
@@ -37,55 +35,22 @@ text-decoration:none;
 font-size:16px;
 }
 
-section{
-padding:80px 20px;
-min-height:100vh;
-}
-
-#home{
+.shop-header{
 background:#f4c542;
+padding:50px 20px;
 text-align:center;
 }
 
-#bio{
-background:#ffffff;
-text-align:center;
-}
-
-#shop{
-background:#f3f3f3;
-text-align:center;
-padding:80px 0;
-}
-
-#contact{
-background:#eaeaea;
-text-align:center;
-}
-
-.shop-widget{
-width:100vw;
-max-width:100vw;
-margin-left:calc(50% - 50vw);
+.catalog{
+max-width:1300px;
+margin:auto;
 padding:40px 20px;
 }
 
-.ft{
+.catalog iframe{
 width:100%;
-}
-
-button{
-padding:12px 20px;
+height:1000px;
 border:none;
-background:#111;
-color:white;
-cursor:pointer;
-margin:10px;
-border-radius:5px;
-}
-
-button:hover{
-background:#333;
 }
 
 footer{
@@ -93,9 +58,11 @@ background:#111;
 color:white;
 text-align:center;
 padding:20px;
+margin-top:40px;
 }
 
 </style>
+
 </head>
 
 <body>
@@ -103,59 +70,27 @@ padding:20px;
 <header>
 
 <h1>TAOT.co</h1>
-<p>The Art of Tote</p>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#bio">Bio</a>
-<a href="#shop">Shop</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="bio.html">Bio</a>
+<a href="shop.html">Shop</a>
+<a href="contact.html">Contact</a>
 </nav>
 
 </header>
 
-<section id="home">
-
-<h2>Home</h2>
-<p>Hand Painted Tote Bags</p>
-
-</section>
-
-<section id="bio">
-
-<h2>Bio</h2>
-<p>The Art of Tote is a small creative project by Ahmed and Humna focused on handmade painted tote bags. Each piece is designed and painted individually on canvas.</p>
-
-</section>
-
-<section id="shop">
-
+<section class="shop-header">
 <h2>Shop</h2>
-<p>View Our Hand Painted Products</p>
-
-<div class="shop-widget">
-
-<div data-key="Playful Product Cards" class="ft" id="ftfq3k45jj"></div>
-
-</div>
-
+<p>View Our Hand Painted Tote Collection</p>
 </section>
 
-<section id="contact">
+<section class="catalog">
 
-<h2>Contact</h2>
-
-<a href="https://instagram.com/_ahmedaharoon">
-<button>Founder's Instagram</button>
-</a>
-
-<a href="https://instagram.com/taot.co">
-<button>TAOT.co's Instagram</button>
-</a>
-
-<a href="https://wa.me/923248546769?text=Hello%20I%20want%20to%20order%20a%20tote%20bag%20from%20The%20Art%20of%20Tote">
-<button>Order on WhatsApp</button>
-</a>
+<iframe
+src="https://emb.fouita.com/widget/0x3f962e/ftfq3k45jj"
+title="TAOT Catalog">
+</iframe>
 
 </section>
 
@@ -164,8 +99,6 @@ padding:20px;
 <p>© 2026 TAOT.co</p>
 
 </footer>
-
-<script src="https://wdg.fouita.com/widgets/0x3f962e.js"></script>
 
 </body>
 </html>
