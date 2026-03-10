@@ -19,95 +19,61 @@
 </nav>
 </header>
 
-<section class="section">
-
+<section class="shop-title">
 <h1>Shop</h1>
+<p>Hand painted tote bags</p>
+</section>
 
-<div class="grid">
+<section class="products">
 
-<div class="card">
+<div class="product">
 <h3>Illustrated Tote</h3>
-<p>Rs 3500</p>
-<button onclick="showPayment()">Pay Now</button>
+<p class="price">Rs 3500</p>
+<button class="paybtn" onclick="showPayment()">Pay Now</button>
 </div>
 
-<div class="card">
+<div class="product">
 <h3>Smiley Tote</h3>
-<p>Rs 3500</p>
-<button onclick="showPayment()">Pay Now</button>
+<p class="price">Rs 3500</p>
+<button class="paybtn" onclick="showPayment()">Pay Now</button>
 </div>
 
-<div class="card">
+<div class="product">
 <h3>Custom Artwork Tote</h3>
-<p>Rs 4000</p>
-<button onclick="showPayment()">Pay Now</button>
-</div>
-
+<p class="price">Rs 4000</p>
+<button class="paybtn" onclick="showPayment()">Pay Now</button>
 </div>
 
 </section>
 
-<section class="section" id="paymentSection" style="display:none">
+<section id="payment" class="payment">
 
-<h2>Payment Instructions</h2>
+<h2>Payment Methods</h2>
 
-<p>
-All payments must be authenticated by sending a payment screenshot to our WhatsApp.
-Orders will only be confirmed after payment verification and approval.
-</p>
+<p>After sending payment share the screenshot on WhatsApp for order confirmation.</p>
+
+<div class="payment-box">
 
 <h3>JazzCash</h3>
-<p>
-Title: TAOT.co<br>
-Account Number: 0331-0006909
-</p>
+<p>Title TAOT.co<br>0331-0006909</p>
 
 <h3>SadaPay</h3>
-<p>
-Title: Ahmed<br>
-Account Number: 0324-8546769
-</p>
+<p>Title Ahmed<br>0324-8546769</p>
 
 <h3>Bank Alfalah</h3>
-<p>
-Title: Ahmed<br>
-Account Number: 04611010872272
-</p>
+<p>Title Ahmed<br>04611010872272</p>
 
 <h3>Allied Bank</h3>
-<p>
-Title: Ahmed<br>
-Account Number: 09960010159285360015<br>
-Alternate: 09960010159285360021
-</p>
+<p>Title Ahmed<br>09960010159285360015<br>09960010159285360021</p>
 
-<h3>Standard Chartered Bank</h3>
-<p>
-Title: Ahmed<br>
-Account Number: PK04SCBL0000001046231601
-</p>
+<h3>Standard Chartered</h3>
+<p>Title Ahmed<br>PK04SCBL0000001046231601</p>
 
-<button onclick="window.location.href='https://wa.me/923248546769'">
+</div>
+
+<button class="whatsapp" onclick="window.location.href='https://wa.me/923248546769'">
 Send Payment Screenshot
 </button>
-
-</section>
-
-<section class="section">
-
-<h2>Terms and Conditions</h2>
-
-<p>
-Returns and exchanges are only available for premade tote bags.
-</p>
-
-<p>
-Customized tote bags cannot be returned or exchanged because they are produced specifically for the customer.
-</p>
-
-<p>
-Return requests must be made within 5–7 days after delivery and the item must remain unused.
-</p>
 
 </section>
 
@@ -119,8 +85,7 @@ Return requests must be made within 5–7 days after delivery and the item must 
 <script>
 
 function showPayment(){
-document.getElementById("paymentSection").style.display="block";
-window.location.href="#paymentSection";
+document.getElementById("payment").scrollIntoView({behavior:"smooth"});
 }
 
 </script>
